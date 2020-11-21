@@ -22,8 +22,8 @@
             <ul class="layui-nav layui-layout-right">
                 <li class="layui-nav-item">
                     <a href="javascript:;" class="userinfo">
-                        <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
-                        <span class="text-avatar">A</span>
+                        <img src="" class="layui-nav-img">
+                        <span class="text-avatar"></span>
                         admin
                     </a>
                     <dl class="layui-nav-child">
@@ -32,16 +32,17 @@
                         <dd><a href="">重设密码</a></dd>
                     </dl>
                 </li>
-                <li class="layui-nav-item"><a href=""><span class="iconfont icon-tuichu"></span>退出</a></li>
+                <li class="layui-nav-item"><a href="javascript:;" id="logout"><span
+                            class="iconfont icon-tuichu"></span>退出</a></li>
             </ul>
         </div>
 
         <div class="layui-side layui-bg-black">
             <div class="layui-side-scroll">
                 <div class="userinfo">
-                    <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
-                    <span class="text-avatar">A</span>
-                    <span id="welcome">欢迎admin</span>
+                    <img src="" class="layui-nav-img">
+                    <span class="text-avatar"></span>
+                    <span id="welcome"></span>
                 </div>
                 <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
                 <ul class="layui-nav layui-nav-tree" lay-shrink="all">
@@ -79,11 +80,12 @@
     </div>
 
 
-
     <!-- 引入 layui.js -->
-    <script src="/assets/lib/layui/layui.all.js"></script>
+    <script src='/assets/lib/layui/layui.all.js'></script>
     <!-- 引入 jQuery -->
-    <script src="/assets/lib/jquery.js"></script>
+    <script src='/assets/lib/jquery.js'></script>
+    <!-- 引入自定义baseAPI -->
+    <script src='/assets/js/baseAPI.js'></script>
     <!-- 引入自定义index.js -->
     <script src="/assets/js/index.js"></script>
 
