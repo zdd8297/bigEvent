@@ -54,7 +54,7 @@ function getUserinfo(){
 // 渲染用户头像
 function renderAvatar(user){
     let name = user.nickname || user.username
-    $("#welcome").html('欢迎&nbsp;&nbsp;'+name)
+    $("#welcome").html('&nbsp;'+ name + '&nbsp;！！')
     if (user.user_pic !== null){
         // 渲染图片头像
         $(".layui-nav-img").attr('src',user.user_pic).show()

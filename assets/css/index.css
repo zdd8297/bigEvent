@@ -34,6 +34,11 @@ a {
     user-select: none;
 }
 
+#welcome {
+    font-size: 14px;
+    font-weight: 700;
+}
+
 .layui-side-scroll .userinfo {
     border-bottom: solid 1px #282B33;
 }
@@ -45,15 +50,23 @@ a {
 
 .text-avatar {
     position: relative;
-    top: 8px;
+    top: 4px;
     display: inline-block;
     width: 40px;
     height: 40px;
-    background-color: #009688;
+    /* background-color: hotpink; */
+
+    background: #fc00ff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #00dbde, #fc00ff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #00dbde, #fc00ff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     border-radius: 50%;
     line-height: 40px;
     text-align: center;
-    font-size: 30px;
+    font-size: 22px;
     font-weight: 700;
     color: #fff;
     margin-right: 10px;
