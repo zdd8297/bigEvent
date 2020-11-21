@@ -41,7 +41,7 @@ $(function(){
         }
         $.post('/api/reguser', data, function(res){
             if(res.status !== 0){
-                return layer.msg('注册失败，'+res.message)
+                return layer.msg(res.message)
             }
             layer.msg(res.message, function(){
                 $("#to_log").click(); // 模拟点击切换至登录
@@ -61,7 +61,7 @@ $(function(){
             data: $(this).serialize(),
             success: function(res){
                 if(res.status !==0){
-                    return layer.msg('登陆失败，'+res.message)
+                    return layer.msg(res.message)
                 }
                 layer.msg(res.message)
                 // 把服务器返回的TOKEN储存在本地缓存
