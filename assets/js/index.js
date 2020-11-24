@@ -36,7 +36,7 @@ function getUserinfo(){
         //     Authorization:localStorage.getItem('token') ||''
         // },
         success:function(res){
-            console.log(res);
+            // console.log(res);
             if(res.status !== 0){
                 $("#welcome").html('昵称或用户名获取失败')
                 $(".layui-nav-img").hide()
